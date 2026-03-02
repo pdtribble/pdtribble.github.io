@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PhishWise — Cybersecurity awareness training platform by Paul Tribble." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>PhishWise — Paul Tribble</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>body{background:#0a0a0f}</style>
+</head>
+<body>
+
+  <div class="cursor"      aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="../" class="nav-logo">&gt;&nbsp;paul_tribble</a>
+      <ul class="nav-links" role="list">
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="nav-drawer" aria-label="Mobile navigation">
+    <a href="../#about">About</a>
+    <a href="../#projects">Projects</a>
+    <a href="../#skills">Skills</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="subpage-hero">
+      <div class="container subpage-hero-inner">
+        <a href="../" class="back-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Back to Portfolio
+        </a>
+
+        <div class="card-tags" style="margin-bottom:var(--sp-lg);">
+          <span class="tag">Node.js</span>
+          <span class="tag">Web App</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Express</span>
+          <span class="tag">SQLite</span>
+        </div>
+
+        <h1 class="sub-title">PhishWise</h1>
+        <p class="sub-subtitle">
+          A cybersecurity awareness training platform for running realistic phishing
+          simulations and measuring employee security behavior.
+        </p>
+
+        <div style="display:flex;gap:var(--sp-md);flex-wrap:wrap;">
+          <a href="https://github.com/pdtribble" class="btn btn-outline" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true" style="width:15px;height:15px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="subpage-body">
+      <div class="container">
+
+        <!-- Overview -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">overview</h2>
+          <p>
+            PhishWise is a full-stack cybersecurity awareness platform built to help organizations
+            identify vulnerabilities in their human attack surface. It lets administrators create
+            and launch realistic phishing campaigns, track who clicked, who reported, and who
+            submitted credentials — then automatically delivers targeted training to those who fail.
+          </p>
+          <p>
+            The platform is designed with a security-first mindset: all campaign data is stored locally,
+            email templates are customizable, and results are broken down by department or role for
+            meaningful reporting.
+          </p>
+        </div>
+
+        <!-- Key features -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">key features</h2>
+          <ul class="feat-list">
+            <li>Campaign builder with customizable phishing email templates and landing pages</li>
+            <li>Real-time dashboard tracking click rates, credential submissions, and report rates</li>
+            <li>Role-based access control for admins and campaign managers</li>
+            <li>Automated remediation training triggered on failure events</li>
+            <li>Department-level analytics with exportable CSV reports</li>
+            <li>Target list management with import/export via CSV</li>
+            <li>Audit log for all admin actions and campaign events</li>
+          </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">screenshots</h2>
+          <div class="screens">
+            <div class="screen-ph">[ Dashboard — Campaign Overview ]</div>
+            <div class="screen-ph">[ Email Template Builder ]</div>
+            <div class="screen-ph">[ Analytics — Click &amp; Report Rates ]</div>
+            <div class="screen-ph">[ Target Management ]</div>
+          </div>
+        </div>
+
+        <!-- Technical deep-dive -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">technical details</h2>
+          <p>
+            Built with <strong style="color:var(--text-primary)">Node.js + Express</strong> on the
+            backend, using <strong style="color:var(--text-primary)">SQLite</strong> for local
+            persistent storage. The frontend is server-rendered with vanilla JS for interactivity —
+            no client-side framework, keeping the deployment footprint small.
+          </p>
+          <p>
+            Email delivery is handled via SMTP with support for configurable relay servers.
+            Tracking pixels and unique per-target redirect URLs enable per-user click attribution
+            without relying on third-party services.
+          </p>
+        </div>
+
+        <!-- What I learned -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">challenges &amp; lessons</h2>
+          <p>
+            <em style="color:var(--text-muted);">[ Writeup in progress — check back soon. ]</em>
+          </p>
+          <p>
+            Key areas: realistic email deliverability, avoiding spam filters during testing,
+            designing a UX that makes security data actionable rather than overwhelming, and
+            building a system people actually want to use.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; 2026 Paul Tribble</span>
+      <span class="footer-credit">Built by Paul Tribble</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

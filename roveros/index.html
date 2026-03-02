@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ROVEROS — WiFi-controlled ESP32 robot platform by Paul Tribble." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>ROVEROS — Paul Tribble</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>body{background:#0a0a0f}</style>
+</head>
+<body>
+
+  <div class="cursor"      aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="../" class="nav-logo">&gt;&nbsp;paul_tribble</a>
+      <ul class="nav-links" role="list">
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="nav-drawer" aria-label="Mobile navigation">
+    <a href="../#about">About</a>
+    <a href="../#projects">Projects</a>
+    <a href="../#skills">Skills</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="subpage-hero">
+      <div class="container subpage-hero-inner">
+        <a href="../" class="back-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Back to Portfolio
+        </a>
+
+        <div class="card-tags" style="margin-bottom:var(--sp-lg);">
+          <span class="tag">ESP32</span>
+          <span class="tag">C++</span>
+          <span class="tag">WebSockets</span>
+          <span class="tag">Arduino</span>
+          <span class="tag">Embedded</span>
+          <span class="tag">L298N</span>
+        </div>
+
+        <h1 class="sub-title">ROVEROS</h1>
+        <p class="sub-subtitle">
+          A WiFi-controlled robot platform built on the ESP32 microcontroller, with a
+          real-time browser-based interface, block programming support, and hardware-aware
+          battery monitoring.
+        </p>
+
+        <div style="display:flex;gap:var(--sp-md);flex-wrap:wrap;">
+          <a href="https://github.com/pdtribble" class="btn btn-outline" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true" style="width:15px;height:15px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="subpage-body">
+      <div class="container">
+
+        <!-- Overview -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">overview</h2>
+          <p>
+            ROVEROS is a WiFi-controlled robot built around the ESP32 microcontroller.
+            The robot serves its own web interface directly from the chip — no app install,
+            no Bluetooth pairing, no external server. You connect to its WiFi network,
+            open a browser, and drive.
+          </p>
+          <p>
+            The control interface uses WebSockets for low-latency bidirectional communication.
+            A virtual joystick on the web UI sends movement commands in real time, and the
+            ESP32 translates them into PWM signals for the L298N dual H-bridge motor driver.
+          </p>
+        </div>
+
+        <!-- Hardware -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">hardware</h2>
+          <ul class="feat-list">
+            <li>ESP32 development board (dual-core Xtensa LX6, built-in WiFi)</li>
+            <li>L298N dual H-bridge motor driver module</li>
+            <li>Two DC gear motors for differential drive</li>
+            <li>LiPo battery with voltage divider for ADC-based monitoring</li>
+            <li>Custom chassis (3D-printed + laser cut acrylic)</li>
+            <li>Optional: HC-SR04 ultrasonic sensor for obstacle avoidance</li>
+          </ul>
+        </div>
+
+        <!-- Key features -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">key features</h2>
+          <ul class="feat-list">
+            <li>Real-time joystick control via WebSockets served from the ESP32 itself</li>
+            <li>Battery voltage monitoring with L298N voltage drop compensation (~2V)</li>
+            <li>Block programming interface — drag-and-drop sequences of commands</li>
+            <li>Speed control via PWM with configurable dead-zone tuning</li>
+            <li>Access Point mode: robot creates its own WiFi network on boot</li>
+            <li>OTA (Over-the-Air) firmware updates via browser</li>
+            <li>Serial debug output for development and calibration</li>
+          </ul>
+        </div>
+
+        <!-- Control interface placeholder -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">web interface</h2>
+          <div class="demo-box">
+            <div class="demo-bar">
+              <span class="demo-dot"></span>
+              <span class="demo-dot"></span>
+              <span class="demo-dot"></span>
+              <span class="demo-url">192.168.4.1 — ROVEROS Control Panel</span>
+            </div>
+            <div class="demo-placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <p>Control interface is served directly by the ESP32.</p>
+              <p>Connect to the robot's WiFi, then navigate to <em>192.168.4.1</em></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">build photos</h2>
+          <div class="screens">
+            <div class="screen-ph">[ Hardware Assembly ]</div>
+            <div class="screen-ph">[ Wiring Diagram / L298N Setup ]</div>
+            <div class="screen-ph">[ Web Control Interface — Joystick View ]</div>
+            <div class="screen-ph">[ Block Programming UI ]</div>
+          </div>
+        </div>
+
+        <!-- Technical deep-dive -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">technical notes</h2>
+          <p>
+            The firmware is written in C++ using the Arduino framework for ESP32. The web server
+            runs on the <strong style="color:var(--text-primary)">ESPAsyncWebServer</strong>
+            library, which handles HTTP and WebSocket connections asynchronously — critical for
+            keeping control latency below ~30ms.
+          </p>
+          <p>
+            Battery monitoring accounts for the ~2V forward voltage drop across the L298N's
+            internal diodes, giving an accurate reading of actual cell voltage rather than
+            the naive ADC reading. Voltage is smoothed with a rolling average over 8 samples.
+          </p>
+        </div>
+
+        <!-- What I learned -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">challenges &amp; lessons</h2>
+          <p>
+            <em style="color:var(--text-muted);">[ Writeup in progress — check back soon. ]</em>
+          </p>
+          <p>
+            Key areas: async WebSocket handling on a resource-constrained microcontroller,
+            PWM dead-zone calibration for reliable low-speed motor control, and building a
+            block-based programming UI that compiles to sequential ESP32 commands.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; 2026 Paul Tribble</span>
+      <span class="footer-credit">Built by Paul Tribble</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

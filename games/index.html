@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GameCenter — Self-hosted multiplayer gaming platform by Paul Tribble." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>GameCenter — Paul Tribble</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>body{background:#0a0a0f}</style>
+</head>
+<body>
+
+  <div class="cursor"      aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="../" class="nav-logo">&gt;&nbsp;paul_tribble</a>
+      <ul class="nav-links" role="list">
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#projects">Projects</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="nav-drawer" aria-label="Mobile navigation">
+    <a href="../#about">About</a>
+    <a href="../#projects">Projects</a>
+    <a href="../#skills">Skills</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="subpage-hero">
+      <div class="container subpage-hero-inner">
+        <a href="../" class="back-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          Back to Portfolio
+        </a>
+
+        <div class="card-tags" style="margin-bottom:var(--sp-lg);">
+          <span class="tag">Node.js</span>
+          <span class="tag">Socket.io</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Proxmox</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Self-Hosted</span>
+        </div>
+
+        <h1 class="sub-title">GameCenter</h1>
+        <p class="sub-subtitle">
+          A self-hosted multiplayer gaming platform built on Proxmox and Raspberry Pi infrastructure,
+          with real-time game support via Socket.io and a modular game architecture.
+        </p>
+
+        <div style="display:flex;gap:var(--sp-md);flex-wrap:wrap;">
+          <a href="https://github.com/pdtribble" class="btn btn-primary" target="_blank" rel="noopener">
+            <!-- external link -->
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+            Live Demo
+          </a>
+          <a href="https://github.com/pdtribble" class="btn btn-outline" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true" style="width:15px;height:15px;"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="subpage-body">
+      <div class="container">
+
+        <!-- Live embed placeholder -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">live demo</h2>
+          <div class="demo-box">
+            <div class="demo-bar">
+              <span class="demo-dot"></span>
+              <span class="demo-dot"></span>
+              <span class="demo-dot"></span>
+              <span class="demo-url">games.pdtribble.is-a.dev</span>
+            </div>
+            <div class="demo-placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <p>Live demo loads here —</p>
+              <p><em>games.pdtribble.is-a.dev</em></p>
+              <p style="font-size:0.72rem;color:var(--text-muted);margin-top:var(--sp-sm);">
+                Running on Proxmox + Raspberry Pi. May be offline if homelab is down.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">overview</h2>
+          <p>
+            GameCenter is a self-hosted multiplayer gaming platform that I run on my homelab
+            infrastructure — a Proxmox server and a Raspberry Pi. It supports real-time
+            multiplayer games through a persistent WebSocket layer (Socket.io) and a shared
+            SQLite database for lobby state, user sessions, and game history.
+          </p>
+          <p>
+            The architecture is deliberately modular: adding a new game is as simple as dropping a
+            new module into the <code>games/</code> directory and registering it with the router.
+            No framework magic — just clean separation of concerns.
+          </p>
+        </div>
+
+        <!-- Infrastructure -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">infrastructure</h2>
+          <ul class="feat-list">
+            <li>Proxmox VE for VM/container orchestration and snapshots</li>
+            <li>Raspberry Pi as an always-on Node.js server with nginx reverse proxy</li>
+            <li>SSL via Let's Encrypt with automatic renewal</li>
+            <li>Persistent game state in SQLite with WAL mode for concurrent reads</li>
+            <li>Systemd service for automatic restart on failure</li>
+            <li>Sync mechanism between Proxmox and Pi deployments</li>
+          </ul>
+        </div>
+
+        <!-- Key features -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">key features</h2>
+          <ul class="feat-list">
+            <li>Real-time multiplayer via Socket.io with room-based game isolation</li>
+            <li>Lobby system: create, join, and start games with a shareable code</li>
+            <li>Modular game architecture — each game is a self-contained module</li>
+            <li>Bot / AI player support for solo practice or uneven lobbies</li>
+            <li>Persistent leaderboards and match history per game</li>
+            <li>Responsive UI — playable on desktop and mobile</li>
+            <li>Turn management and timer logic per game type</li>
+          </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">screenshots</h2>
+          <div class="screens">
+            <div class="screen-ph">[ Home — Game Selection ]</div>
+            <div class="screen-ph">[ Lobby — Waiting Room ]</div>
+            <div class="screen-ph">[ In-Game — Real-Time Play ]</div>
+            <div class="screen-ph">[ Leaderboard ]</div>
+          </div>
+        </div>
+
+        <!-- What I learned -->
+        <div class="sub-section reveal">
+          <h2 class="sub-section-title">challenges &amp; lessons</h2>
+          <p>
+            <em style="color:var(--text-muted);">[ Writeup in progress — check back soon. ]</em>
+          </p>
+          <p>
+            Key areas: managing Socket.io room lifecycle without memory leaks, syncing game state
+            across reconnections, keeping SQLite performant under concurrent writes, and making
+            self-hosted infrastructure feel reliable enough for actual gameplay sessions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; 2026 Paul Tribble</span>
+      <span class="footer-credit">Built by Paul Tribble</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
